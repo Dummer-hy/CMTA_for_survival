@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --which_splits 5foldcv \
+                                      --dataset tcga_skcm \
+                                      --data_root_dir "D:\Documents\Pycharm\MIL\PORPOISE\datasets\TCGA-SKCM\TCGA-SKCM-pt_files" \
+                                      --modal coattn \
+                                      --model cmta \
+                                      --num_epoch 30 \
+                                      --batch_size 1 \
+                                      --loss nll_surv_l1 \
+                                      --lr 0.001 \
+                                      --optimizer SGD \
+                                      --scheduler None \
+                                      --alpha 1.0
